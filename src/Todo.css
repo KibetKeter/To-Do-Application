@@ -1,3 +1,17 @@
-.todo__list{
-    text-align: center;
+.todo__list {
+  text-align: center;
+}
+.edit__button {
+  margin-right: 20px;
+}
+.buttons {
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 700px;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+.buttons__edit {
+  margin-right: 10px !important;
 }

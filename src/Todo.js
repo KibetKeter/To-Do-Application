@@ -86,8 +86,10 @@ function Todo(props) {
                 </ListItemAvatar>
                 <ListItemText primary = {props.todo.todo} secondary="Needs to be done👈🏿"/>
             </ListItem>
-            <Button  variant="outlined" color="primary" onClick= {event => setOpen(true)}> Edit</Button>
-            <Button  variant="outlined" color="secondary" onClick= {event =>  db.collection('todos').doc(props.todo.id).delete()}>DELETE ME</Button>
+            <div className = "buttons">
+                <Button className="buttons__edit" variant="outlined" color="primary" onClick= {event => setOpen(true)}> Edit</Button>
+                <Button className="buttons__delete" variant="outlined" color="secondary" onClick= {event =>  db.collection('todos').doc(props.todo.id).delete()}>DELETE ME</Button>
+            </div>
         </List>
         </>
     )
